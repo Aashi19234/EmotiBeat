@@ -1,0 +1,92 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ea4c89;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative; /* Make container a positioned element */
+}
+
+.searchbar {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 25%; /* Adjust as needed */
+}
+
+.searchbar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+::placeholder {
+    color: black;
+}
+
+.searchbar button img {
+    width: 25px;
+}
+
+.searchbar button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: skyblue;
+    cursor: pointer;
+}
+
+.logo{
+    width: 250px;
+    
+    height: auto;
+    left: 0px;
+    position: absolute;
+    top: 5%;
+
+}
+
+.image-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: auto; /* Center the grid horizontally */
+    position: absolute;
+    bottom: 5%; /* Adjust as needed */
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
